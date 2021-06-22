@@ -59,4 +59,32 @@ describe('Sudoku', () => {
     s.board[9][3]=2;
     expect(s.checkCol(3)).toEqual(false);
   });
+
+  test('checkSquare function should check a block of 9 cells correctly for occurence of numbers 1-9', () => {
+    const s= new Sudoku();
+    s.board[1][1]=1;
+    s.board[1][2]=2;
+    s.board[1][3]=3;
+    s.board[2][1]=4;
+    s.board[2][2]=5;
+    s.board[2][3]=6;
+    s.board[3][1]=7;
+    s.board[3][2]=8;
+    s.board[3][3]=9;
+    expect(s.checkSquare(1,1)).toEqual(true);
+  });
+
+  test('checkSquare function should check a block of 9 cells correctly for occurence of numbers 1-9', () => {
+    const s= new Sudoku();
+    s.board[1][1]=1;
+    s.board[1][2]=1;
+    s.board[1][3]=3;
+    s.board[2][1]=4;
+    s.board[2][2]=5;
+    s.board[2][3]=6;
+    s.board[3][1]=7;
+    s.board[3][2]=8;
+    s.board[3][3]=9;
+    expect(s.checkSquare(1,1)).toEqual(false);
+  });
 });
