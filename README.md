@@ -1,5 +1,5 @@
 # PROJECT NAME
-## By Adrian Camacho
+## By Adrian Camacho & Andrew Giang
 
 ---
 
