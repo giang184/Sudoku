@@ -1,12 +1,29 @@
 export function Sudoku() {
-  this.row1 = [0,0,0,0,0,0,0,0,0,0];
-  this.row2 = [0,0,0,0,0,0,0,0,0,0];
-  this.row3 = [0,0,0,0,0,0,0,0,0,0];
-  this.row4 = [0,0,0,0,0,0,0,0,0,0];
-  this.row5 = [0,0,0,0,0,0,0,0,0,0];
-  this.row6 = [0,0,0,0,0,0,0,0,0,0];
-  this.row7 = [0,0,0,0,0,0,0,0,0,0];
-  this.row8 = [0,0,0,0,0,0,0,0,0,0];
-  this.row9 = [0,0,0,0,0,0,0,0,0,0];
+  this.board = [
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0],
+  ];
 }
 
+
+Sudoku.prototype.checker = function () {
+  Sudoku.checkRow();
+  Sudoku.checkCol();
+  Sudoku.checkSquare();
+}
+
+Sudoku.prototype.checkRow = function () {
+  for(let i=1; i<=9; i++) {
+    if(this.row1.indexOf(i) === -1)
+      return false;
+  }
+  return true;
+}
