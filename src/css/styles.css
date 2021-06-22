@@ -1,0 +1,22 @@
+body{
+  padding:80px 40px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+  width: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.input {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+input {
+  width: 125%;
+}
