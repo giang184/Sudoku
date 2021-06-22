@@ -15,12 +15,14 @@ export function Sudoku() {
 
 Sudoku.prototype.checker = function () {
   for(let i=1; i<=9; i++) {
-    if(this.checkRow(i)  || this.checkCol(i) ) {
+    if(!this.checkRow(i)  || !this.checkCol(i) ) {
       return false;
     }
   }
-  Sudoku.checkSquare();
-
+  if (!this.checkSquare(1,1) || !this.checkSquare(1,4) || !this.checkSquare(1,7) || !this.checkSquare(4,1) || !this.checkSquare(4,4) || !this.checkSquare(4,7) || 
+  !this.checkSquare(7,1) || !this.checkSquare(7,4) || !this.checkSquare(7,7)) {
+    return false;
+  }
   return true;
 }
 
@@ -47,8 +49,8 @@ Sudoku.prototype.checkCol = function (colNum) {
 Sudoku.prototype.checkSquare = function (startRow, startCol) {
   let checkSquareArray = [];
 
-  for(let r = startRow; r <= startRow + 3; r++) {
-    for(let c = startCol; c <= startCol + 3; c ++){
+  for(let r = startRow; r <= startRow + 2; r++) {
+    for(let c = startCol; c <= startCol + 2; c ++){
       checkSquareArray.push(this.board[r][c]);
     }
   }
