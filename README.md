@@ -19,9 +19,7 @@
 9. NPM
 ---
 
-### Project Live Site At:
-
-[live site](https://giang184.github.io/)
+### Project Live Site At: [live site](https://giang184.github.io/sudoku/)
 
 ---
 ### Installation Instructions
