@@ -1,102 +1,116 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-  <title>TITLE-HTML</title>
+  <title>Sudoku</title>
 </head>
+
 <body>
+
   <form id="sudoku">
-  <div class="container">
-    <div class="input">5</div>
-    <div class="input">3</div>
-    <div class="input"><input type="text" id="13"></div>
-    <div class="input"><input type="text" id="14"></div>
-    <div class="input">7</div>
-    <div class="input"><input type="text" id="16"></div>
-    <div class="input"><input type="text" id="17"></div>
-    <div class="input"><input type="text" id="18"></div>
-    <div class="input"><input type="text" id="19"></div>
+    <div class="top">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+          <h1>Easy Sudoku Puzzle </h1>
+        </div>
+        <div class="col-sm-3"><button type="submit" class="btn-lg btn-success">Check!</button></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="input">8</div>
+      <div class="input"><input type="text" id="12"></div>
+      <div class="input">9</div>
+      <div class="input">3</div>
+      <div class="input"><input type="text" id="15"></div>
+      <div class="input">6</div>
+      <div class="input">7</div>
+      <div class="input">5</div>
+      <div class="input">2</div>
 
-    <div class="input">6</div>
-    <div class="input"><input type="text" id="22"></div>
-    <div class="input"><input type="text" id="23"></div>
-    <div class="input">1</div>
-    <div class="input">9</div>
-    <div class="input">5</div>
-    <div class="input"><input type="text" id="27"></div>
-    <div class="input"><input type="text" id="28"></div>
-    <div class="input"><input type="text" id="29"></div>
-    
-    <div class="input"><input type="text" id="31"></div>
-    <div class="input">9</div>
-    <div class="input">8</div>
-    <div class="input"><input type="text" id="34"></div>
-    <div class="input"><input type="text" id="35"></div>
-    <div class="input"><input type="text" id="36"></div>
-    <div class="input"><input type="text" id="37"></div>
-    <div class="input">6</div>
-    <div class="input"><input type="text" id="39"></div>
+      <div class="input">3</div>
+      <div class="input"><input type="text" id="22"></div>
+      <div class="input">2</div>
+      <div class="input">1</div>
+      <div class="input"><input type="text" id="25"></div>
+      <div class="input">5</div>
+      <div class="input">8</div>
+      <div class="input"><input type="text" id="28"></div>
+      <div class="input">4</div>
 
-    <div class="input">8</div>
-    <div class="input"><input type="text" id="42"></div>
-    <div class="input"><input type="text" id="43"></div>
-    <div class="input"><input type="text" id="44"></div>
-    <div class="input">6</div>
-    <div class="input"><input type="text" id="45"></div>
-    <div class="input"><input type="text" id="46"></div>
-    <div class="input"><input type="text" id="48"></div>
-    <div class="input">3</div>
-    
-    <div class="input">4</div>
-    <div class="input"><input type="text" id="52"></div>
-    <div class="input"><input type="text" id="53"></div>
-    <div class="input">8</div>
-    <div class="input"><input type="text" id="55"></div>
-    <div class="input">3</div>
-    <div class="input"><input type="text" id="57"></div>
-    <div class="input"><input type="text" id="58"></div>
-    <div class="input">1</div>
-    
-    <div class="input">7</div>
-    <div class="input"><input type="text" id="62"></div>
-    <div class="input"><input type="text" id="63"></div>
-    <div class="input"><input type="text" id="64"></div>
-    <div class="input">2</div>
-    <div class="input"><input type="text" id="66"></div>
-    <div class="input"><input type="text" id="67"></div>
-    <div class="input"><input type="text" id="68"></div>
-    <div class="input">6</div>
-    
-    <div class="input"><input type="text" id="71"></div>
-    <div class="input">6</div>
-    <div class="input"><input type="text" id="73"></div>
-    <div class="input"><input type="text" id="74"></div>
-    <div class="input"><input type="text" id="75"></div>
-    <div class="input"><input type="text" id="76"></div>
-    <div class="input">2</div>
-    <div class="input">8</div>
-    <div class="input"><input type="text" id="79"></div>
-    
-    <div class="input"><input type="text" id="81"></div>
-    <div class="input"><input type="text" id="82"></div>
-    <div class="input"><input type="text" id="83"></div>
-    <div class="input">4</div>
-    <div class="input">1</div>
-    <div class="input">9</div>
-    <div class="input"><input type="text" id="87"></div>
-    <div class="input"><input type="text" id="88"></div>
-    <div class="input">5</div>
+      <div class="input"><input type="text" id="31"></div>
+      <div class="input">4</div>
+      <div class="input">7</div>
+      <div class="input">8</div>
+      <div class="input">2</div>
+      <div class="input">9</div>
+      <div class="input"><input type="text" id="37"></div>
+      <div class="input">6</div>
+      <div class="input">3</div>
 
-    <div class="input"><input type="text" id="91"></div>
-    <div class="input"><input type="text" id="92"></div>
-    <div class="input"><input type="text" id="93"></div>
-    <div class="input"><input type="text" id="94"></div>
-    <div class="input">8</div>
-    <div class="input"><input type="text" id="96"></div>
-    <div class="input"><input type="text" id="97"></div>
-    <div class="input">7</div>
-    <div class="input">9</div>
-  </div>
-  <button type="submit" class="btn-lg btn-success">Check!</button>
-</form>
+      <div class="input">2</div>
+      <div class="input"><input type="text" id="42"></div>
+      <div class="input">5</div>
+      <div class="input"><input type="text" id="44"></div>
+      <div class="input"><input type="text" id="45"></div>
+      <div class="input">8</div>
+      <div class="input">6</div>
+      <div class="input">3</div>
+      <div class="input"><input type="text" id="49"></div>
+
+      <div class="input">1</div>
+      <div class="input"><input type="text" id="52"></div>
+      <div class="input">6</div>
+      <div class="input">7</div>
+      <div class="input"><input type="text" id="55"></div>
+      <div class="input">3</div>
+      <div class="input">2</div>
+      <div class="input"><input type="text" id="58"></div>
+      <div class="input">8</div>
+
+      <div class="input">4</div>
+      <div class="input"><input type="text" id="62"></div>
+      <div class="input">3</div>
+      <div class="input">9</div>
+      <div class="input"><input type="text" id="65"></div>
+      <div class="input">2</div>
+      <div class="input"><input type="text" id="67"></div>
+      <div class="input"><input type="text" id="68"></div>
+      <div class="input">7</div>
+
+      <div class="input">7</div>
+      <div class="input">3</div>
+      <div class="input"><input type="text" id="73"></div>
+      <div class="input"><input type="text" id="74"></div>
+      <div class="input">8</div>
+      <div class="input">4</div>
+      <div class="input"><input type="text" id="76"></div>
+      <div class="input">2</div>
+      <div class="input">6</div>
+
+      <div class="input">6</div>
+      <div class="input"><input type="text" id="82"></div>
+      <div class="input">4</div>
+      <div class="input">2</div>
+      <div class="input">9</div>
+      <div class="input">7</div>
+      <div class="input">3</div>
+      <div class="input">8</div>
+      <div class="input"><input type="text" id="89"></div>
+
+      <div class="input"><input type="text" id="91"></div>
+      <div class="input">2</div>
+      <div class="input"><input type="text" id="93"></div>
+      <div class="input">6</div>
+      <div class="input">3</div>
+      <div class="input"><input type="text" id="96"></div>
+      <div class="input"><input type="text" id="97"></div>
+      <div class="input">7</div>
+      <div class="input"><input type="text" id="99"></div>
+    </div>
+
+
+  </form>
 </body>
+
 </html>

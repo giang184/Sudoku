@@ -7,7 +7,7 @@
     "test": "jest --coverage",
     "build": "webpack --config webpack.config.js",
     "lint": "eslint src/*.js",
-    "start:dev": "npm run build; webpack serve --mode=development"
+    "start": "npm run build & webpack serve --open --mode=development"
   },
   "repository": {
     "type": "git",

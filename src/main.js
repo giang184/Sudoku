@@ -5,60 +5,84 @@ import './css/styles.css'
 import {Sudoku} from './sudoku.js'
 
 
-let myBoard = new Sudoku();
+
 
 // const r1c3 = parseInt($("#13").val());
 // console.log(r1c3);
 $(document).ready(function() {
   $('#sudoku').submit(function(event) {
     event.preventDefault();
-  
+    let myBoard = new Sudoku();
 
     let userArray = [];
     
     $('input').each(function() {
       userArray.push(parseInt($(this).val()));
     })
-    console.log(userArray);
+    if(userArray.length < 29)
+      alert("Please enter a number into every box and check again!")
 
-    myBoard.board[1][1] = 5;
-    myBoard.board[1][2] = 3;
-    myBoard.board[1][5] = 7;
+    myBoard.board[1][1] = 8;
+    myBoard.board[1][3] = 9;
+    myBoard.board[1][4] = 3;
+    myBoard.board[1][6] = 6;
+    myBoard.board[1][7] = 7;
+    myBoard.board[1][8] = 5;
+    myBoard.board[1][9] = 2;
 
-    myBoard.board[2][1] = 6;
+    myBoard.board[2][1] = 3;
+    myBoard.board[2][3] = 2;
     myBoard.board[2][4] = 1;
-    myBoard.board[2][5] = 9;
     myBoard.board[2][6] = 5;
+    myBoard.board[2][7] = 8;
+    myBoard.board[2][9] = 4;
 
-    myBoard.board[3][2] = 9;
-    myBoard.board[3][3] = 8;
+    myBoard.board[3][2] = 4;
+    myBoard.board[3][3] = 7;
+    myBoard.board[3][4] = 8;
+    myBoard.board[3][5] = 2;
+    myBoard.board[3][6] = 9;
     myBoard.board[3][8] = 6;
+    myBoard.board[3][9] = 3;
 
-    myBoard.board[4][1] = 8;
-    myBoard.board[4][5] = 6;
-    myBoard.board[4][9] = 3;
+    myBoard.board[4][1] = 2;
+    myBoard.board[4][3] = 5;
+    myBoard.board[4][6] = 8;
+    myBoard.board[4][7] = 6;
+    myBoard.board[4][8] = 3;
 
-    myBoard.board[5][1] = 4;
-    myBoard.board[5][4] = 8;
+    myBoard.board[5][1] = 1;
+    myBoard.board[5][3] = 6;
+    myBoard.board[5][4] = 7;
     myBoard.board[5][6] = 3;
-    myBoard.board[5][9] = 1;
+    myBoard.board[5][7] = 2;
+    myBoard.board[5][9] = 8;
 
-    myBoard.board[6][1] = 7;
-    myBoard.board[6][5] = 2;
-    myBoard.board[6][9] = 6;
+    myBoard.board[6][1] = 4;
+    myBoard.board[6][3] = 3;
+    myBoard.board[6][4] = 9;
+    myBoard.board[6][6] = 2;
+    myBoard.board[6][9] = 7;
     
-    myBoard.board[7][2] = 6;
-    myBoard.board[7][7] = 2;
-    myBoard.board[7][8] = 8;
+    myBoard.board[7][1] = 7;
+    myBoard.board[7][2] = 3;
+    myBoard.board[7][5] = 8;
+    myBoard.board[7][6] = 4;
+    myBoard.board[7][8] = 2;
+    myBoard.board[7][9] = 6;
 
-    myBoard.board[8][4] = 4;
-    myBoard.board[8][5] = 1;
-    myBoard.board[8][6] = 9;
-    myBoard.board[8][9] = 5;
+    myBoard.board[8][1] = 6;
+    myBoard.board[8][3] = 4;
+    myBoard.board[8][4] = 2;
+    myBoard.board[8][5] = 9;
+    myBoard.board[8][6] = 7;
+    myBoard.board[8][7] = 3;
+    myBoard.board[8][8] = 8;
 
-    myBoard.board[9][5] = 8;
+    myBoard.board[9][2] = 2;
+    myBoard.board[9][4] = 6;
+    myBoard.board[9][5] = 3;
     myBoard.board[9][8] = 7;
-    myBoard.board[9][9] = 9
     
     let count =0;
     for(let r=1; r<=9; r++) {
@@ -69,6 +93,7 @@ $(document).ready(function() {
         }
       }
     }
-    console.log(myBoard.checkCol(5));
+    console.log(myBoard.board);
+    console.log(myBoard.checker());
   })
 })
